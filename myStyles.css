@@ -1,0 +1,1254 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+*{
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    overflow-x: hidden;
+    background-color: black;
+    background-image: url(imgs/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#mouse{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 200;
+    pointer-events: none;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+#head{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 75px;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#contentContainer{
+    height: 100%;
+    display: flex;
+    position: absolute;
+}
+
+#footer{
+    width: 100%;
+    height: 25px;
+    border-top: white solid 1px;
+    background-color: rgb(0, 0, 0);
+}
+
+#background{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+#titleMom{
+    display: flex;
+    background-color: aliceblue;
+    width: 100%;
+    height: 75px;
+}
+
+#titleEn{
+    width: 210px;
+    color: black;
+    font-size: 2.4rem;
+    margin: 20px;
+    user-select: none;
+
+}
+
+#titleKr{
+    width: 150px;
+    color: black;
+    font-size: 2.2rem;
+    user-select: none;
+}
+
+#headLine{
+    width: 100%;
+    height: 37px;
+    margin-top: 38px;
+    border-top: black 1px solid;
+}
+
+.contents{
+    display: flex; 
+}
+
+#contentA{
+    width: 1920px;
+    height: 100%;
+    position: relative;
+   /* display: none; check!!!!!!!!!!!!!!!!!!!!!!*/
+
+}
+#contentB{
+    width: 1920px;
+    height: 100%;
+    position: relative;
+    /*display: none; /*check!!!!!!!!!!!!!!!!!!!!!!*/
+}
+#contentC{
+    width: 1920px;
+    height: 100%;
+    position: relative;
+    /*display: none; /*check!!!!!!!!!!!!!!!!!!!!!!*/
+
+}
+#contentD{
+    width: 1920px;
+    height: 100%;
+    position: relative;
+    /*display: none; /*check!!!!!!!!!!!!!!!!!!!!!!*/
+}
+
+#containerA{
+    width: 1198px;
+    height: 697px;
+    margin-top: 94px;
+}
+
+#contentARow01{
+    display: flex;
+    background-color: grey;
+    width: 100%;
+    height: 388px;
+}
+
+#Acol1{
+    background-color: indigo;
+    width: 50%;
+    position: relative;
+}
+
+#mars{
+    position: absolute;
+}
+
+#title01{
+    position: absolute;
+    margin: 0px;
+    color: #01ff31;
+    font-size: 6rem;
+    font-weight: 700;
+    user-select: none;
+}
+
+#title01:hover{
+    color: yellow;
+}
+
+#Acol2{
+    background-color: rgb(0, 255, 242);
+    width: 50%;
+    position: relative;
+}
+
+@keyframes blink-effect {
+    50%{
+        opacity: 0;
+    }
+}
+
+#wave{
+    position: absolute;
+    width: 252px;
+    height: 12px;
+    bottom: 60px;
+    left: -130px;
+    animation: blink-effect 0.7s step-end infinite;
+}
+
+#atmos{
+    position: absolute;
+}
+
+#gif{
+    position: absolute;
+    left: 430px;
+    top: 170px;
+}
+
+#contentARow02{
+    display: flex;
+    width: 100%;
+    height: 309px;
+}
+
+#Acol3{
+    width: 25%;
+}
+
+#Acol4{
+    width: 25%;
+    padding-right: 10px;
+}
+
+#hoverhover{
+    position: relative;
+}
+
+#air{
+    position: absolute;
+    margin-top: 18px;
+    margin-left: 4px;
+    transition-duration: 0.5s;
+    transition-property: width, height;
+    transition-timing-function: ease;
+    transition-delay: inherit;
+}
+
+#airHover{
+    position: absolute;
+    opacity:0;
+    margin-top: 15px;
+    margin-left: -1px;
+    transition: opacity 0.5s linear;
+}
+
+#airHover.active{
+    opacity:1;
+}
+
+
+
+
+#hoverhover:hover #air{
+    opacity: 1;
+}
+
+#airtext{
+    position: absolute;
+    color: white;
+    width: 170px;
+    top: 206px;
+    left: 100px;
+    opacity:0;
+    transition: opacity 0.5s linear;
+}
+
+#airtext.active{
+    opacity:1;
+}
+
+#onehover{
+    position: relative;
+}
+
+#one{
+    position: absolute;
+    margin-top: 65px;
+    user-select: none;
+    transition-duration: 0.5s;
+    transition-property: width, height;
+    transition-timing-function: ease;
+    transition-delay: inherit;
+}
+
+#Atext01{
+    position: absolute;
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-top: 75px;
+    margin-left: 65px;
+    user-select: none;
+    opacity:0;
+    transition: opacity 0.5s linear;
+}
+
+
+#Atext01.active{
+    opacity:1;
+}
+
+#onehover:hover #Atext01{
+    opacity: 1;
+}
+
+#Acol5{
+    display: flex;
+    position: relative;
+    width: 50%;
+}
+
+#Atitle01{
+    position: absolute;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 0px; /* top right bottom left*/ 
+    user-select: none;
+}
+
+
+#Atext02{
+    position: relative;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    margin-top: 178px;
+    user-select: none;
+}
+
+#textthree{
+    position: absolute;
+    margin: 0px;
+    color: #00d2ff;
+    font-size: 6rem;
+    font-weight: 700;
+    user-select: none;
+}
+
+#textthree:hover{
+    color: #d400ff;
+}
+
+#textfour{
+    font-size: 1.4rem;
+    margin-top: 208px;
+    color: white;
+    user-select: none;
+}
+
+
+
+
+/*
+
+#textone{
+    margin-top: 64px;
+}
+
+#texttwo{
+    margin-top: 113px;
+}
+
+
+
+
+#container010202{
+    background-color: rgb(25, 0, 255);
+    width: 599px;
+    height: 309px;
+}
+
+#textfour{
+    margin-top: 172px;
+}
+
+*/
+
+.blankA{
+    width: 50px;
+}
+
+/*지워도 되는거*/
+#titleA{
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Aline1{
+    position:absolute;
+    border: solid 1px black;
+    margin-top: 143px;
+    width: 156px;
+}
+
+#Abartext1{
+    position: absolute;
+    color: black;
+    width: 156px;
+    margin-top: 167px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2.0rem;
+    user-select: none;
+}
+
+#Abarline2{
+    position:absolute;
+    margin-top: 340px;
+    width: 156px;
+    color: black;
+    border-color: black;
+    border: solid 1px black;
+    user-select: none;
+}
+
+#Abartext2{
+    position: absolute;
+    color: black;
+    width: 156px;
+    margin-top: 370px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2.0rem;
+    user-select: none;
+}
+
+#Abartext3{
+    position: absolute;
+    color: black;
+    width: 156px;
+    margin-top: 460px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.0rem;
+    user-select: none;
+}
+
+/**/
+#bartitle{
+    position: absolute;
+    margin-top: 19px;
+}
+
+.bartitle{
+    position: absolute;
+    margin-top: 40px;
+}
+
+.blankB{
+    width: 72px;
+}
+
+
+
+#titleB{
+    display: flex;
+    justify-content: center;
+    background-image: url(imgs/stepone/bar2.png);
+    width: 200px;
+    height: 100%;
+}
+
+#Bbartext1{
+    display: flex;
+    position: absolute;
+    color: black;
+    width: 156px;
+    margin-top: 167px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2.0rem;
+}
+
+#Bbarline2{
+    display: flex;
+    position:absolute;
+    margin-top: 430px;
+    width: 156px;
+    color: black;
+    border-color: black;
+    border: solid 1px black;
+}
+
+#Bbartext2{
+    display: flex;
+    position: absolute;
+    color: black;
+    width: 156px;
+    margin-top: 460px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2.0rem;
+}
+
+#Bbartext3{
+    display: flex;
+    position: absolute;
+    color: black;
+    width: 156px;
+    margin-top: 550px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.0rem;
+}
+
+
+#titleC{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-image: url(imgs/stepfour/bar.png);
+    width: 200px;
+    height: 100%;
+}
+
+#Cbartext1{
+        display: flex;
+        position: absolute;
+        color: black;
+        width: 156px;
+        margin-top: 167px;
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 2.0rem;
+}
+
+
+#Cbarline2{
+    display: flex;
+    position:absolute;
+    margin-top: 430px;
+    width: 156px;
+    color: black;
+    border-color: black;
+    border: solid 1px black;
+}
+
+#Cbartext2{
+    display: flex;
+    position: absolute;
+    color: black;
+    width: 156px;
+    margin-top: 460px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2.0rem;
+}
+
+#Cbartext3{
+    display: flex;
+    position: absolute;
+    color: black;
+    width: 156px;
+    margin-top: 560px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.0rem;
+}
+
+#titleD{
+    display: flex;
+    justify-content: center;
+    background-image: url(imgs/stepthree/bar.png);
+    width: 200px;
+    height: 100%;
+}
+
+
+#Dbartext1{
+    display: flex;
+    position: absolute;
+    color: black;
+    width: 156px;
+    margin-top: 167px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2.0rem;
+}
+
+#Dbarline2{
+    display: flex;
+    position:absolute;
+    margin-top: 310px;
+    width: 156px;
+    color: black;
+    border-color: black;
+    border: solid 1px black;
+}
+
+#Dbartext2{
+    display: flex;
+    position: absolute;
+    color: black;
+    width: 156px;
+    margin-top: 350px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2.0rem;
+}
+
+#Dbartext3{
+    display: flex;
+    position: absolute;
+    color: black;
+    width: 156px;
+    margin-top: 440px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.0rem;
+}
+
+
+
+
+#drop{
+    position: absolute;
+    left: 500px;
+    top: 70px;
+}
+
+#icon{
+    position: absolute;
+    padding-left: 1009px;
+    padding-top: 415px;
+}
+
+#containerB{
+    width: 1198px;
+    height: 697px;
+    margin-top: 94px;
+    position: relative;
+}
+
+#yotext{
+    position: absolute;
+    left: 850px;
+    top: 170px;
+    color: #fcff01;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+#contentBRow01{
+    display: flex;
+    width: 893px;
+    height: 422px;
+    position: relative;
+}
+
+#title1{
+    color: #fcff01;
+    font-size: 6.0rem;
+    margin: 0px;
+    position: absolute;
+    font-weight: 700;
+}
+
+
+#text1{
+    color: white;
+    position: absolute;
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-top: 111px;
+    margin-left: 58px;
+}
+
+#text1:hover{
+    color: violet;
+}
+
+#text2{
+    color: white;
+    font-size: 1.6rem;
+    position: absolute;
+    margin-top: 163px;
+    margin-left: 58px;
+}
+
+#text3{
+    color: white;
+    font-size: 1.4rem;
+    position: absolute;
+    margin-top: 197px;
+    margin-left: 34px;
+    line-height: 3.0rem;
+    font-size: 300;
+}
+
+
+#yo{
+    position: absolute;
+    padding-left: 628px;
+    padding-top: 100px;
+}
+
+#vapor{
+    position: absolute;
+    padding-left: 670px;
+    padding-top: 130px;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+
+
+#contentBRow02{
+    display: flex;
+    width: 894px;
+    height: 275px;
+}
+
+#Bcol01{
+    display: flex;
+    width: 600px;
+    height: 100%
+}
+
+#waters{
+    position: absolute;
+    padding-top: 167px;
+    padding-left: 62px;
+}
+
+#title2{
+    position: absolute;
+    display: flex;
+    margin-top: 38px;
+    margin-left: 120px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: white;
+}
+
+#textB{
+    display: flex;
+    position: absolute;
+    margin-top: 90px;
+    margin-left:130px;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    text-align: right;
+}
+
+#Bcol02{
+    width: 294px;
+    height: 100%
+}
+
+#twoo{
+    padding-left: 20px;
+    padding-top: 35px;
+}
+
+#containerC{
+    width: 1198px;
+    height: 697px;
+    margin-top: 94px;
+    position: relative;
+}
+
+@keyframes blink-effect {
+    50%{
+        opacity: 0;
+    }
+}
+
+#grass{
+    position: absolute;
+    left: 550px;
+    animation: blink-effect 1s step-end infinite;
+}
+
+#line{
+    position: absolute;
+    left: 1000px;
+    top: 0px;
+}
+
+#contentCRow01{
+    display: flex;
+    width: 100%;
+    height: 422px;
+}
+
+#Ccol01{
+    position: relative;
+    width: 50%;
+}
+
+#Ctext1{
+    display: flex;
+    position: absolute;
+    color: #fffc00;
+    margin: 0px;
+    font-size: 6.0rem;
+    font-weight: 700;
+}
+
+#Ctext1:hover{
+    color: rgb(0, 255, 229);
+}
+
+#Ctext2{
+    position: absolute;
+    color: white;
+    margin-top: 193px;
+    margin-left: 77px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    opacity:0;
+    transition: opacity 0.5s linear;
+}
+
+#Ctext3{
+    display: flex;
+    position: absolute;
+    color: white;
+    margin-top: 276px;
+    margin-left: 77px;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+#mossHover{
+    position: relative;
+}
+
+#moss{
+    position: absolute;
+    margin-top: 183px;
+    transition-duration: 0.5s;
+    transition-property: width, height;
+    transition-timing-function: ease;
+    transition-delay: inherit;
+}
+
+#Ctext2.active{
+    opacity:1;
+}
+
+#mossHover:hover #Ctext2{
+    opacity: 1;
+}
+
+#leehover{
+    position: relative;
+}
+
+
+#lee{
+    position: absolute;
+    margin-left: 305px;
+    margin-top: 372px;
+    transition-duration: 0.5s;
+    transition-property: width, height;
+    transition-timing-function: ease;
+    transition-delay: inherit;
+}
+
+#lee2{
+    position: absolute;
+    margin-left: 304px;
+    margin-top: 371px;
+    opacity:0;
+    transition: opacity 0.5s linear;
+}
+
+#lee2.active{
+    opacity:1;
+}
+
+#leehover:hover #lee{
+    opacity: 1;
+}
+
+#Ccol02{
+    position: relative;
+    width: 50%;
+}
+
+#secondhover{
+    position: relative;
+}
+
+#second{
+    position: absolute;
+    margin-top: 274px;
+    transition-duration: 0.5s;
+    transition-property: width, height;
+    transition-timing-function: ease;
+    transition-delay: inherit;
+}
+
+#second2{
+    position: absolute;
+    margin-top: 338px;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+
+#second2.active{
+    opacity: 1;
+}
+
+#contentCRow02{
+    display: flex;
+    width: 100%;
+    height: 275px;
+}
+
+#Ccol03{
+    position: relative;
+    width: 50%;
+}
+
+#anaHover{
+    position: relative;
+}
+
+#ana{
+    position: absolute;
+    margin-left: 70px;
+    margin-top: -8px;
+    transition-duration: 0.5s;
+    transition-property: width, height;
+    transition-timing-function: ease;
+    transition-delay: inherit;
+}
+
+#mosspic{
+    position: absolute;
+    opacity: 0;
+    margin-left: 72px;
+    margin-top: 10px;
+    margin-top: 15px;
+    transition: opacity 0.5s linear;
+    width : 505px;
+    height : 245px;
+}
+
+#mosspic.active{
+    opacity:1;
+}
+
+#anahover:hover #ana{
+    opacity: 1;
+}
+
+#Ctext8{
+    display: flex;
+    position: absolute;
+    margin-top: 65px;
+    margin-left: 290px;
+    color: white;
+}
+
+#Ctext9{
+    display: flex;
+    position: absolute;
+    margin-top: 235px;
+    margin-left: 70px;
+    color: white;
+}
+
+#Ccol04{
+    position: relative;
+    width: 50%;
+}
+
+#Ctext4{
+    display: flex;
+    position: absolute;
+    margin: 0px;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 300;
+}
+
+#Ctext5{   
+    display: flex;
+    position: absolute;
+    margin-top: 159px;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 300;
+}
+
+#Ctext6{
+    display: flex;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 294px;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 300;
+}
+
+#Ctext7{
+    display: flex;
+    position: absolute;
+    margin-top: 133px;
+    margin-left: 294px;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 300;
+}
+
+
+#containerD{
+        width: 1198px;
+        height: 697px;
+        margin-top: 94px;
+        position: relative;
+}
+
+#contentDRow01{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 388px;
+}
+
+#Dcol1{
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+#Dtitle{
+    position: absolute;
+    left: 290px;
+    top: 80px;
+    margin: 0px;
+    font-size: 6rem;
+    font-weight: 700;
+    color: #01ff31;
+}
+
+#Dtitle:hover{
+    color: yellow;
+}
+
+#Dnumber{
+    display: flex;
+    position: absolute;
+    margin-top: 116px;
+}
+
+#Dtext1{
+    position: absolute;
+    color: white;
+    margin-top: 120px;
+    margin-left: 50px;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+#poxerhover{
+    position: relative;
+}
+
+#Dtext2{
+    position: absolute;
+    color: white;
+    margin-top: 210px;
+    margin-left: 50px;
+    font-size: 2.2rem;
+    font-weight: 500;
+    transition-duration: 0.5s;
+    transition-property: width, height;
+    transition-timing-function: ease;
+    transition-delay: inherit;
+}
+
+#power{
+    position: absolute;
+    width: 265px;
+    height: 281px;
+    left: 150px;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+#power:hover{
+opacity:1;
+}
+
+#powerhover:hover #power{
+    opacity: 1;
+}
+
+
+#Dtext3{
+    position: absolute;
+    color: white;
+    margin-top: 260px;
+    margin-left: 50px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 3.0rem;
+}
+
+
+#Dcol2{
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+#bg2{
+    display: flex;
+}
+
+#b1{
+    display: flex;
+    position: absolute;
+    margin-top: 195px;
+    margin-left: 200px;
+}
+
+#contentDRow02{
+    display: flex;
+    width: 100%;
+    height: 309px;
+}
+
+#Dcol3{
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+#rock{
+    display: flex;
+    position: absolute;
+    margin-left: 25px;
+}
+
+@keyframes blink-effect {
+    50%{
+        opacity: 0;
+    }
+}
+
+#Dtext4{
+    display: flex;
+    position: absolute;
+    color: white;
+    margin-top: 280px;
+    margin-left: 350px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    animation: blink-effect 0.7s step-end infinite;
+}
+
+
+
+#Dcol4{
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+#mirrorhover{
+    position: relative;
+}
+
+#mirror{
+    position: absolute;
+    top: 140px;
+    margin-left: 294px;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+#Dtext7{
+    color: white;
+    margin-left: 50px;
+    margin-top: 140px;
+    font-size: 2.2rem;
+    font-weight: 500;
+    transition-duration: 0.5s;
+    transition-property: width, height;
+    transition-timing-function: ease;
+    transition-delay: inherit;
+}
+
+#mirror.active{
+    opacity:1;
+}
+
+#mirrorhover:hover #mirror{
+    opacity: 1;
+}
+
+#number3{
+    display: flex;
+    position: absolute;
+    margin-top: 5px;
+}
+
+#number4{
+    display: flex;
+    position: absolute;
+    margin-top: 140px;
+}
+
+#Dtext5{
+    display: flex;
+    position: absolute;
+    color: white;
+    margin-top: 5px;
+    margin-left: 50px;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+#Dtext6{
+    display: flex;
+    position: absolute;
+    color: white;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+
+#Dtext8{
+    display: flex;
+    position: absolute;
+    color: white;
+    margin-left: 50px;
+    margin-top: 180px;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}   

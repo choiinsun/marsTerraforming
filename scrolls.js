@@ -200,9 +200,13 @@ console.log(second)
 second.addEventListener('mouseover', secondmouse);
 second.addEventListener('mouseout', secondmouseout);
 
+let iii=document.querySelector('#iii')
 function secondmouse() {
     second.classList.add('active');
+    iii.classList.add('active');
 }
+
 function secondmouseout() {
     second.classList.remove('active');
+    iii.classList.remove('active');
 }
